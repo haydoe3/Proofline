@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+@layer base {
+  :root,
+  [data-palette="obsidian"] {
+    --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+    color-scheme: dark;
+    --pl-bg: #090a0d;
+    --pl-header: rgba(13, 15, 20, 0.86);
+    --pl-surface: #111318;
+    --pl-surface-inset: #171a21;
+    --pl-surface-hover: #1c2029;
+    --pl-border: #232732;
+    --pl-border-strong: #323846;
+
+    --pl-text: #f4f6fb;
+    --pl-text-secondary: #a8b0c0;
+    --pl-text-muted: #70798c;
+
+    --pl-accent: #10b981;
+    --pl-accent-hover: #059669;
+    --pl-accent-ink: #ffffff;
+    --pl-accent-text: #34d399;
+    --pl-accent-soft: rgba(16, 185, 129, 0.12);
+    --pl-accent-border: rgba(16, 185, 129, 0.34);
+
+    --pl-danger-soft: rgba(244, 63, 94, 0.12);
+    --pl-danger-soft-hover: rgba(244, 63, 94, 0.2);
+    --pl-danger-border: rgba(244, 63, 94, 0.38);
+    --pl-danger-text: #fda4af;
+    --pl-danger-ink: #ffe4e6;
+    --pl-danger-line: #fb7185;
+
+    --pl-warn-text: #fcd34d;
+
+    --pl-tooltip-bg: #171a22;
+    --pl-tooltip-border: #333a4a;
+    --pl-tooltip-text: #f8fafc;
+    --pl-tooltip-muted: #94a3b8;
+
+    --pl-slack-header: #0b0d12;
+    --pl-slack-header-text: #f8fafc;
+    --pl-logo-bg: #11161f;
+    --pl-logo-stroke: #34d399;
+  }
+
+  [data-palette="alabaster"] {
+    color-scheme: light;
+    --pl-bg: #f6f8fb;
+    --pl-header: rgba(255, 255, 255, 0.9);
+    --pl-surface: #ffffff;
+    --pl-surface-inset: #f1f5f9;
+    --pl-surface-hover: #e9eef5;
+    --pl-border: #e2e8f0;
+    --pl-border-strong: #cbd5e1;
+
+    --pl-text: #0f172a;
+    --pl-text-secondary: #475569;
+    --pl-text-muted: #64748b;
+
+    --pl-accent: #047857;
+    --pl-accent-hover: #065f46;
+    --pl-accent-ink: #ffffff;
+    --pl-accent-text: #047857;
+    --pl-accent-soft: rgba(4, 120, 87, 0.08);
+    --pl-accent-border: rgba(4, 120, 87, 0.26);
+
+    --pl-danger-soft: #fef2f2;
+    --pl-danger-soft-hover: #fee2e2;
+    --pl-danger-border: #fecaca;
+    --pl-danger-text: #b91c1c;
+    --pl-danger-ink: #7f1d1d;
+    --pl-danger-line: #ef4444;
+
+    --pl-warn-text: #b45309;
+
+    --pl-tooltip-bg: #0f172a;
+    --pl-tooltip-border: #334155;
+    --pl-tooltip-text: #f8fafc;
+    --pl-tooltip-muted: #94a3b8;
+
+    --pl-slack-header: #0f172a;
+    --pl-slack-header-text: #ffffff;
+    --pl-logo-bg: #0f172a;
+    --pl-logo-stroke: #34d399;
+  }
+
+  [data-palette="cobalt"] {
+    color-scheme: dark;
+    --pl-bg: #070b14;
+    --pl-header: rgba(11, 17, 30, 0.88);
+    --pl-surface: #0e1525;
+    --pl-surface-inset: #141e33;
+    --pl-surface-hover: #1a2742;
+    --pl-border: #1e2a45;
+    --pl-border-strong: #2e3f63;
+
+    --pl-text: #f1f5ff;
+    --pl-text-secondary: #a5b4d4;
+    --pl-text-muted: #6b7da3;
+
+    --pl-accent: #3b82f6;
+    --pl-accent-hover: #2563eb;
+    --pl-accent-ink: #ffffff;
+    --pl-accent-text: #60a5fa;
+    --pl-accent-soft: rgba(59, 130, 246, 0.14);
+    --pl-accent-border: rgba(59, 130, 246, 0.36);
+
+    --pl-danger-soft: rgba(244, 63, 94, 0.13);
+    --pl-danger-soft-hover: rgba(244, 63, 94, 0.22);
+    --pl-danger-border: rgba(244, 63, 94, 0.38);
+    --pl-danger-text: #fda4af;
+    --pl-danger-ink: #ffe4e6;
+    --pl-danger-line: #fb7185;
+
+    --pl-warn-text: #fcd34d;
+
+    --pl-tooltip-bg: #131c31;
+    --pl-tooltip-border: #304166;
+    --pl-tooltip-text: #f8fafc;
+    --pl-tooltip-muted: #94a3b8;
+
+    --pl-slack-header: #080d1a;
+    --pl-slack-header-text: #f8fafc;
+    --pl-logo-bg: #111b33;
+    --pl-logo-stroke: #60a5fa;
+  }
+
+  [data-palette="carbon"] {
+    color-scheme: light;
+    --pl-bg: #f4f4f5;
+    --pl-header: rgba(255, 255, 255, 0.9);
+    --pl-surface: #ffffff;
+    --pl-surface-inset: #f4f4f6;
+    --pl-surface-hover: #eaeaee;
+    --pl-border: #e4e4e7;
+    --pl-border-strong: #d4d4d8;
+
+    --pl-text: #09090b;
+    --pl-text-secondary: #52525b;
+    --pl-text-muted: #71717a;
+
+    --pl-accent: #18181b;
+    --pl-accent-hover: #27272a;
+    --pl-accent-ink: #ffffff;
+    --pl-accent-text: #047857;
+    --pl-accent-soft: rgba(4, 120, 87, 0.08);
+    --pl-accent-border: rgba(4, 120, 87, 0.25);
+
+    --pl-danger-soft: #fef2f2;
+    --pl-danger-soft-hover: #fee2e2;
+    --pl-danger-border: #fecaca;
+    --pl-danger-text: #b91c1c;
+    --pl-danger-ink: #7f1d1d;
+    --pl-danger-line: #ef4444;
+
+    --pl-warn-text: #b45309;
+
+    --pl-tooltip-bg: #18181b;
+    --pl-tooltip-border: #3f3f46;
+    --pl-tooltip-text: #fafafa;
+    --pl-tooltip-muted: #a1a1aa;
+
+    --pl-slack-header: #18181b;
+    --pl-slack-header-text: #ffffff;
+    --pl-logo-bg: #09090b;
+    --pl-logo-stroke: #e4e4e7;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--pl-bg);
+    color: var(--pl-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 180ms cubic-bezier(0.16, 1, 0.3, 1),
+      color 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}

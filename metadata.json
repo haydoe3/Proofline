@@ -1,0 +1,6 @@
+{
+  "name": "Granola x Gemini GTM Workspace",
+  "description": "Connect Granola meeting intelligence via MCP to Gemini to power go-to-market workflows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
